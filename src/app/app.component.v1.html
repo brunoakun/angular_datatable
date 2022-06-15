@@ -1,0 +1,24 @@
+<p>
+  https://therichpost.com/angular-13-datatable-with-dynamic-data-working-example/</p>
+
+<div class="containe my-5">
+
+  <table class="table table-striped table-bordered table-sm row-border hover" id="datatableexample">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let group of data">
+        <td>{{group.id}}</td>
+        <td>{{group.name}}</td>
+        <td>{{group.email}}</td>
+        <td>{{group.body}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
